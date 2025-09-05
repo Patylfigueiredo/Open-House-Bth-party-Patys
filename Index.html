@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Lista de Presentes — Open House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; color: #333; }
+    header { background: #6c5ce7; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    p { margin: 5px 0; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 20px; }
+    .card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,.1); }
+    .card h3 { margin-top: 0; }
+    .btn { display: inline-block; background: #00cec9; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; margin: 5px 5px 0 0; }
+    .btn-concluido { background: #6c5ce7; }
+    footer { text-align: center; padding: 30px 20px; background: #eee; margin-top: 40px; font-size: 14px; }
+    footer h2 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lista de Presentes</h1>
+    <p>Open House Birthday Paty Party's 🎉</p>
+  </header>
+
+  <div class="container">
+    <p>Escolha um presente simbólico e clique em <b>Presentear</b> para efetuar o pagamento do valor correspondente.</p>
+
+    <div class="grid">
+      <!-- Aqui vão os cards dos presentes -->
+
+<div class="card">
+  <h3>Cadeira de escritório - Cor preta</h3>
+  <p><b>R$ 291,54</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/PLZAhnK" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Cadeira de escritório - Cor preta','R$ 291,54')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>KIT 2 travesseiros-50x90cm- Cor branco - Camesa</h3>
+  <p><b>R$ 189,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href=" https://br.shp.ee/W5weouw" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('KIT 2 travesseiros-50x90cm- Cor branco - Camesa','R$ 189,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Cabeceira Cama Box Queen orgânica 160m- Cor bege</h3>
+  <p><b>R$ 187,00</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/5TyZAXK" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Cabeceira Cama Box Queen orgânica 160m- Cor bege','R$ 187,00')">Concluído</button>
+        <span class="status"></span>
+      </div>
+    
+<div class="card">
+  <h3>Faqueiro Aço inox - 24 peças - Tramontina</h3>
+  <p><b>R$ 61,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/5ZETVBo" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Faqueiro Aço inox - 24 peças - Tramontina','R$ 61,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Jogo taça de vidro 380ml - Kit 6 unidades - Cor transparente</h3>
+  <p><b>R$ 49,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/spmZFxb" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Jogo taça de vidro 380ml - Kit 6 unidades - Cor transparente','R$ 49,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Mixer Power Inox 3 Em 1 Elgin 600w - 127v</h3>
+  <p><b>R$ 125,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/AoGPHdq" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Mixer Power Inox 3 Em 1 Elgin 600w - 127v','R$ 125,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Jogo Copos de Vidro Canelado 423ml - Kit 6 unidades - Cor transparente</h3>
+  <p><b>R$ 44,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/Pwku3Rn" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Jogo Copos de Vidro Canelado 423ml - Kit 6 unidades - Cor transparente','R$ 44,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Liquidificador Power OLIQ606 - 127V - Oster - Cor preto</h3>
+  <p><b>R$ 169,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/zaad68V" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Liquidificador Power OLIQ606 - 127V - Oster - Cor preto','R$ 169,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Baldes Dobrável Retrátil Flexível Multiuso Portátil 10L - Cor branco e cinza</h3>
+  <p><b>R$ 39,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/Y2SK92D" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Baldes Dobrável Retrátil Flexível Multiuso Portátil 10L - Cor branco e cinza','R$ 39,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Pegador De Sorvete Colher Concha C/ Ejetor De Bola Inox 23cm- Cor inox</h3>
+  <p><b>R$ 20,00</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/UhHahAV" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Pegador De Sorvete Colher Concha C/ Ejetor De Bola Inox 23cm- Cor inox','R$ 20,00')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Jogo de Taças Sobremesa - Vidro Diamond - 300ml- Kit 6 unidades - Cor transparente</h3>
+  <p><b>R$ 59,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/UhHahAV" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Jogo de Taças Sobremesa - Vidro Diamond - 300ml- Kit 6 unidades - Cor transparente','R$ 59,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Tapete artesanal Boho Collor - Medida 05x1,50 - Cor transparente</h3>
+  <p><b>R$ 63,00</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/PAPceYb" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Tapete artesanal Boho Collor - Medida 05x1,50 - Cor transparente','R$ 63,00')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Kit Bowl Porcelana - Grande 190ml - Ramequim - KIT 6 unidades - Cor branco</h3>
+  <p><b>R$ 63,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/1F5CuYG" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Kit Bowl Porcelana - Grande 190ml - Ramequim - KIT 6 unidades - Cor branco','R$ 63,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Caixa expositora para Bíblia - Cor base e caixa em acrílico transparente</h3>
+  <p><b>R$ 149,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/SdEb79g" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Caixa expositora para Bíblia - Cor base e caixa em acrílico transparente','R$ 149,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Expositor Slim para Bonés 3mm - 7 divisórias - Cor Acrílico transparente</h3>
+  <p><b>R$ 26,30</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/t2gZ7dZ" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Expositor Slim para Bonés 3mm - 7 divisórias - Cor Acrílico transparente','R$ 26,30')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Bandeja organizadora porta Óculos - grande 6 divisórias  - Cor Acrílico transparente</h3>
+  <p><b>R$ 69,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/UKU1eEH" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Bandeja organizadora porta Óculos - grande 6 divisórias  - Cor Acrílico transparente','R$ 69,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Kit Pote Hermético vidro com Tampa Bambu Yab - 600ml - Kit 3 unidades</h3>
+  <p><b>R$ 49,50</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/7LEp2EW" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Kit Pote Hermético vidro com Tampa Bambu Yab - 600ml - Kit 3 unidades','R$ 49,50')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Saco de Organizar - Medida 17x23 - Kit 50 unidades</h3>
+  <p><b>R$ 34,88</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/SAobyqC" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Saco de Organizar - Medida 17x23 - Kit 50 unidades','R$ 34,88')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Régua Extensão 6 Tomadas E 3 Entradas USB Bivolt 110v/220v - Cor branco</h3>
+  <p><b>R$ 34,66</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/3XkPnvX" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Régua Extensão 6 Tomadas E 3 Entradas USB Bivolt 110v/220v - Cor branco','R$ 34,66')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Pote Hermético vidro com Tampa Bambu - 750ml - 1 unidade</h3>
+  <p><b>R$ 39,96</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/w14XF3m" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Pote Hermético vidro com Tampa Bambu - 750ml - 1 unidade','R$ 39,96')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Divisória Organizadora para Prateleiras e Armários com Encaixe - Kit 4 unidade</h3>
+  <p><b>R$ 100,49</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/7UyRbcV" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Divisória Organizadora para Prateleiras e Armários com Encaixe - Kit 4 unidade','R$ 100,49')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Capa almofada Jolitex Lily Toque de linho com borda - Estampa gatos bordados</h3>
+  <p><b>R$ 46,62</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/1kNKAju" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Capa almofada Jolitex Lily Toque de linho com borda - Estampa gatos bordados','R$ 46,62')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Capa almofada Corda Trançadas Decorativa rustica Boho - Cor Cru ou Terracota</h3>
+  <p><b>R$ 50,00</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/Ux2Ty1w" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Capa almofada Corda Trançadas Decorativa rustica Boho - Cor Cru ou Terracota','R$ 50,00')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Organizador Expositor Porta Cintos - 5 compartimentos - Cor acrílico transparente</h3>
+  <p><b>R$ 54,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/NEfFtm4" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Organizador Expositor Porta Cintos - 5 compartimentos - Cor acrílico transparente','R$ 54,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>kit 3 caixas de livro decorativo Porta Objetos - modelo: Decoração com harmonia</h3>
+  <p><b>R$ 39,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/ccbnhep" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('kit 3 caixas de livro decorativo Porta Objetos - modelo: Decoração com harmonia','R$ 39,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Capa de Almofada Estilo Atemporal - Tamanho 45x45</h3>
+  <p><b>R$ 46,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/MpNeYiw" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Capa de Almofada Estilo Atemporal - Tamanho 45x45','R$ 46,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Manta tricot sofá/poltrona - Siena Decorativa- Tamanho 150x100cm - Cor terracota</h3>
+  <p><b>R$ 159,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/2NRzV7F" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Manta tricot sofá/poltrona - Siena Decorativa- Tamanho 150x100cm - Cor terracota','R$ 159,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Manta tricot sofá/poltrona - Siena Decorativa- Tamanho 150x100cm - Cor Areia</h3>
+  <p><b>R$ 159,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/2NRzV7F" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Manta tricot sofá/poltrona - Siena Decorativa- Tamanho 150x100cm - Cor Areia','R$ 159,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Expositor de Perfumes Cosméticos 3 Andares Multiuso - Em acrílico</h3>
+  <p><b>R$ 45,00</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/Gczuifg" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Expositor de Perfumes Cosméticos 3 Andares Multiuso - Em acrílico','R$ 45,00')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Organizador Cozinha Prateleira Suspensa -  Aço 32cm - Kit 3 unidades - Cor branco</h3>
+  <p><b>R$ 42,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/ijk5bKw" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Organizador Cozinha Prateleira Suspensa -  Aço 32cm - Kit 3 unidades - Cor branco','R$ 42,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Organizador Porta Xicaras armario Cozinha - Kit 2 unidades - Cor branco</h3>
+  <p><b>R$ 26,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/eT3PL4E" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Organizador Porta Xicaras armario Cozinha - Kit 2 unidades - Cor branco','R$ 26,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+ 
+<div class="card">
+  <h3>Organizadores Multiuso Modular - Kit 4 unidades - Acrílico transparente</h3>
+  <p><b>R$ 35,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/SjbLQu1" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Organizadores Multiuso Modular - Kit 4 unidades - Acrílico transparente','R$ 35,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Kit 12 Utensílios de Cozinha Cinza Silicone Cabo de Madeira - Cor Preto e cabo madeira</h3>
+  <p><b>R$ 48,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/ZRhyTXM" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Kit 12 Utensílios de Cozinha Cinza Silicone Cabo de Madeira - Cor Preto e cabo madeira','R$ 48,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Descanso De Panela Suporte Tampas De Panelas Talheres - Cor cru</h3>
+  <p><b>R$ 21,16</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/DqCnYvG" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Descanso De Panela Suporte Tampas De Panelas Talheres - Cor cru','R$ 21,16')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Porta Frios Duplo Transparente - Acrílico transparente</h3>
+  <p><b>R$ 49,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/Ag4iKNJ" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Porta Frios Duplo Transparente - Acrílico transparente','R$ 49,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Rodo Limpador de Silicone Mágico - Tamanho 1,20M - Acrílico transparente</h3>
+  <p><b>R$ 26,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/yJB4Utq" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Rodo Limpador de Silicone Mágico - Tamanho 1,20M - Acrílico transparente','R$ 26,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>MOP Spray Rodo Esfregão com Reservatório</h3>
+  <p><b>R$ 34,88</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/mjV3By2" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('MOP Spray Rodo Esfregão com Reservatório','R$ 34,88')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Rodo Limpa Vidros Multifunções 3 Em 1</h3>
+  <p><b>R$ 22,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/bFaBvfb" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Rodo Limpa Vidros Multifunções 3 Em 1','R$ 22,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>kit Pote Hermético vidro com Tampa 4 travas Marmita - 640ml - Kit 3 unidades</h3>
+  <p><b>R$ 42,98</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/iZ9z5uY" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('kit Pote Hermético vidro com Tampa 4 travas Marmita - 640ml - Kit 3 unidades','R$ 42,98')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Tábua De Corte Dupla 304 - Aço inoxidável</h3>
+  <p><b>R$ 46,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/cqCF2Uc" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Tábua De Corte Dupla 304 - Aço inoxidável','R$ 46,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Kit 02 Fronhas 70cm x 50cm Envelope Línea com Vivo Colorido 200 Fios - Cor bege</h3>
+  <p><b>R$ 48,86</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/yP9rtzu" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Kit 02 Fronhas 70cm x 50cm Envelope Línea com Vivo Colorido 200 Fios - Cor bege','R$ 48,86')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Tapetes Soft para Banheiro - Kit 2 unidades - Cor listras Preto liso</h3>
+  <p><b>R$ 29,40</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/UwZCXC5" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Tapetes Soft para Banheiro - Kit 2 unidades - Cor listras Preto liso','R$ 29,40')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Jogo de Toalhas Gigante / Banhão 4 Peças  Eleganz - Cor Cinza</h3>
+  <p><b>R$ 109,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/ceYb2vU" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Jogo de Toalhas Gigante / Banhão 4 Peças  Eleganz - Cor Cinza','R$ 109,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Kit Cabide Multifuncional para Calças de Inox com 5 Divisórias - Kit 2 unidades - Cor branco</h3>
+  <p><b>R$ 28,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/fPYa3j6" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Kit Cabide Multifuncional para Calças de Inox com 5 Divisórias - Kit 2 unidades - Cor branco','R$ 28,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Cobertor Manta Casal Queen Aconchego Cobreleito 2,40m x 2,60m - Cor Off white</h3>
+  <p><b>R$ 99,99</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/wUChCBv" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Cobertor Manta Casal Queen Aconchego Cobreleito 2,40m x 2,60m - Cor Off white','R$ 99,99')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Cobre Leito 3 Peças CASAL Percal 200 Fios Unique - Cor branco</h3>
+  <p><b>R$ 189,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/y9vcJ39" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Cobre Leito 3 Peças CASAL Percal 200 Fios Unique - Cor branco','R$ 189,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Porta Retrato Decorativo Luxo Em Madeira Natural 10x15cm</h3>
+  <p><b>R$ 69,50</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/2ALu7xD" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Porta Retrato Decorativo Luxo Em Madeira Natural 10x15cm','R$ 69,50')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Porta Retrato Tecido Trançado Luxo Mdf 10x15cm</h3>
+  <p><b>R$ 25,50</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/bcXbt5M" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Porta Retrato Tecido Trançado Luxo Mdf 10x15cm','R$ 25,50')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Manta Quebec Flannel Ultrasoft 400g Aveludado Alto Relevo - Tamanho Casal - Cor Marfim</h3>
+  <p><b>R$ 182,00</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/ZSb1gaL" target="_blank" class="btn">Parcelar na Loja</a>
+<button class="btn btn-concluido" onclick="notificarCompra('Manta Quebec Flannel Ultrasoft 400g Aveludado Alto Relevo - Tamanho Casal - Cor Marfim','R$ 182,00')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Quadro Decorativo Abstrato Moderno Mulher Mexicana Flores - Tamanho 60x40cm</h3>
+  <p><b>R$ 29,70</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/8vuiv9V" target="_blank" class="btn">Parcelar na Loja</a>
+ <button class="btn btn-concluido" onclick="notificarCompra('Quadro Decorativo Abstrato Moderno Mulher Mexicana Flores - Tamanho 60x40cm','R$ 29,70')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Escultura Decorativa Voronoi Gato Minimalista - Tamanho M 15cm - Cor bege</h3>
+  <p><b>R$ 33,15</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/kgRMeas" target="_blank" class="btn">Parcelar na Loja</a>
+ <button class="btn btn-concluido" onclick="notificarCompra('Escultura Decorativa Voronoi Gato Minimalista - Tamanho M 15cm - Cor bege','R$ 33,15')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<div class="card">
+  <h3>Kit 10 Saco a Vácuo + Bomba Elétrica - 110w - Kit 5 unidades sacos - Tamanho 60x80</h3>
+  <p><b>R$ 69,90</b></p>
+  <a href="#pix" class="btn">Pagar via PIX</a>
+  <a href="https://br.shp.ee/fH1cZPE" target="_blank" class="btn">Parcelar na Loja</a>
+      <button class="btn btn-concluido" onclick="notificarCompra('Kit 10 Saco a Vácuo + Bomba Elétrica - 110w - Kit 5 unidades sacos - Tamanho 60x80','R$ 69,90')">Concluído</button>
+        <span class="status"></span>
+      </div>
+
+<!-- Seção PIX -->
+<footer id="pix">
+  <h2>Pagamento via PIX</h2>
+  <p><b>Nome:</b> Patrícia L. Figueiredo</p>
+  <p><b>Chave Pix:</b> paty.lfigueiredo@gmail.com</p>
+  <p><b>Banco:</b> NU Pagamentos - IP</p>
+  <p>Copie e cole a chave no app do seu banco, ou escaneie o QR Code abaixo:</p>
+  <img src="pix_qrcode_copia_e_cola.png" alt="QR Code PIX" width="250">
+</footer>
+
+<!-- Script EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init('fXViCknA_GOByCUx8'); 
+
+  function notificarCompra(nomePresente, valor) {
+    emailjs.send('service_1wgfj7p', 'template_5bsnaho', {
+      nomePresente: nomePresente,
+      valor: valor
+    })
+    .then(function(response) {
+     alert("Notificação enviada! Obrigado pelo presente! Valor: R$ " + valor);
+      // Atualiza visualmente o cartão (apenas se houver <span class="status"></span>)
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        if(card.innerText.includes(nomePresente)) {
+          card.style.opacity = 0.5;
+          card.querySelectorAll('.btn').forEach(btn => btn.disabled = true);
+          const status = card.querySelector('.status');
+          if(status) status.innerText = "🎉 Comprado!";
+        }
+      });
+    }, function(error) {
+      alert("Erro ao enviar notificação. Tente novamente.");
+    });
+  }
+</script>
+   
