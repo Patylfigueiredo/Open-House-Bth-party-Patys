@@ -498,11 +498,11 @@
 
   function notificarCompra(nomePresente, valor) {
     emailjs.send('service_1wgfj7p', 'template_5bsnaho', {
-      nome do Presente: nome do presente,
+      nomePresente: nomePresente,
       valor: valor
     })
     .then(function(response) {
-     alert("Notificação enviada! Obrigado pelo presente! Valor: R$ " + valor);
+      alert("Notificação enviada! Obrigado pelo presente! Valor: " + valor);
       // Atualiza visualmente o cartão (apenas se houver <span class="status"></span>)
       const cards = document.querySelectorAll('.card');
       cards.forEach(card => {
@@ -518,4 +518,5 @@
     });
   }
 </script>
+
    
